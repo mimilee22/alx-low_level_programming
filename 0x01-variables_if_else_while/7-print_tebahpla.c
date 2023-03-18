@@ -8,10 +8,10 @@
 */
 int main(void)
 {
-int  c;
-for (c = 0; c < 10; c++)
+char c;
+for (c = 'z'; c >= 'a'; c--)
 {
-putchar(c + 48);
+putchar(c);
 }
 putchar('\n');
 return (0);
