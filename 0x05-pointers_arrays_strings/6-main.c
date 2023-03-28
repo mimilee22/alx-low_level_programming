@@ -1,21 +1,15 @@
-#include <stdio.h>
 #include "main.h"
+
 /**
-* puts2 - Prints every other with the first character,
-* followed by a new line.
+* main - check the code
 *
-* @str: The string to prinnt
+* Return: Always 0.
 */
-void puts2(char *str)
+int main(void)
 {
-int i = 0;
-while (str[i] != '\0')
-{
-if (i % 2 == 0)
-{
-putchar(str[i]);
-}
-i++;
-}
-putchar('\n');
+    char *str;
+
+    str = "0123456789";
+    puts2(str);
+    return (0);
 }
