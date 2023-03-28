@@ -1,20 +1,21 @@
+#include <stdio.h>
 #include "main.h"
-
 /**
- * main - check the code for
- *
- * Return: Always 0.
- */
-int main(void)
+* puts2 - Prints every other with the first character,
+* followed by a new line.
+*
+* @str: The string to prinnt
+*/
+void puts2(char *str)
 {
-    int array[5];
-
-    array[0] = 98;
-    array[1] = 402;
-    array[2] = -198;
-    array[3] = 298;
-    array[4] = -1024;
-    print_array(array, 5);
-    return (0);
+int i = 0;
+while (str[i] != '\0')
+{
+if (i % 2 == 0)
+{
+putchar(str[i]);
 }
-
+i++;
+}
+putchar('\n');
+}
